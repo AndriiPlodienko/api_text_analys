@@ -15,7 +15,7 @@ text = re.sub('[^\w\s]', '', text)  # removing special characters
 
 # Calling the API for text analysis
 response = openai.Completion.create(
-    engine="davinci",  # модель для аналізу
+    engine="davinci",  
     prompt=f"Statistical analysis of the text:\n{text}",
     max_tokens=1024,
     n=1,
